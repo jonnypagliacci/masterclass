@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -32,23 +31,18 @@ const SignInSide = () => {
     );
   }
 
-
-  const credenciales: any = [{
-    email: "dr.serio.valdovinos@gmail.com",
-    password: "Sergio123"
-  }];
+  localStorage.setItem('email', "dr.serio.valdovinos@gmail.com");
+  localStorage.setItem('password', "Sergio123");
 
   const navigate = useNavigate();
   
-  const [email, setUsername] = useState("");
-  const [password, setPassword] = useState("");
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 
 
     const data = new FormData(event.currentTarget);
     event.preventDefault();
-    if (data.get("email") === credenciales[0].email) {
+    if (data.get("email") === localStorage.getItem("email") && data.get("password") === localStorage.getItem("password") ) {
       navigate('/waifuHome')
     } else {
       window.alert("Corrige la contraseña o el usuario")
