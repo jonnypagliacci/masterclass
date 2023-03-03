@@ -31,7 +31,7 @@ const SignInSide = () => {
     );
   }
 
-  localStorage.setItem('email', "dr.serio.valdovinos@gmail.com");
+  localStorage.setItem('email', "dr.sergio.valdovinos@gmail.com");
   localStorage.setItem('password', "Sergio123");
 
   const navigate = useNavigate();
