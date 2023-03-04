@@ -1,4 +1,3 @@
-import { log } from "console";
 import { useEffect, useState } from "react";
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';

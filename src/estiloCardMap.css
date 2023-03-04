@@ -1,18 +1,108 @@
+body{
+    background-image: url('../public/bGWaifu.jpg') ;
+    position: sticky;
+}
 .App-container {
     margin-left: 25px;
     display:flex;  
     width: 50%;
     flex-direction: horizontal;
     justify-content: space-between; 
+
+    
 }
 .App-item {
     margin: 15px;
-    outline: solid 3px black;
-    border-radius: 10px;
+    outline: solid 1px rgb(255, 1, 191);
+    color: #ffffff;
+    text-align: center;
     padding: 5px;
+    width: 30%;
+    border-radius: 7%;
+    
 }
 .Price-item {
-    font-weight: 600;
+    font-weight: 700px;
     display: flex;
     justify-content: center;
+
+}
+
+.button-item{
+    color:#ffffff;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 50%;
+    background-image: url("https://i.pinimg.com/originals/62/98/a3/6298a3ce68a33db01bbab898bce11e61.gif");
+    background-position: 70%;
+    border-radius: 7%;
+}
+
+
+.button-item2{
+    display: flex;
+    color:#ffffff;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 50%;
+    background-image: url("https://www.gifcen.com/wp-content/uploads/2022/07/tanjiro-gif-5.gif");
+    background-position: 70%;
+    border-radius: 7%;
+}
+
+.div-button-item{
+    position: fixed;
+    right: 11%;
+    border-radius: 8%;
+}
+
+.div-button-item :hover{
+    background-image: url('https://media.tenor.com/V02g4yDu5dAAAAAd/rem-rezero.gif');
+}
+
+.div-button-item2{
+    position: fixed;
+    right: 11%;
+    top: 24%;
+    border-radius: 8%;
+}
+
+.div-button-item2 :hover{
+    background-image: url('https://media.tenor.com/n69LvFpJGekAAAAC/tanjiro-tanjiro-season2.gif');
+}
+
+.killSwitch{
+    position: fixed;
+    margin-left: 50%;
+}
+.waifu4BG{
+    background-image: url('https://i.pinimg.com/originals/f7/55/30/f7553062fd0b9e514b4446d49e806e34.gif');
+    outline: black;
+    border-radius: 4%;
+    height: 30%;
+    width: 30%;
+    left: 70%;
+    top: 70%;
+    position: fixed;
+    border-radius: 7%;
+}
+.waifu4{
+    position: sticky;
+    cursor: pointer;
+    align-items: center;
+    width: 85%;
+    margin-left: 8.5%;
+    margin-top: 6%;
+    height: 85%;
+    border-radius: 4%;
 }
